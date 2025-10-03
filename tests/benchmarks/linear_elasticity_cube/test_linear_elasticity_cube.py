@@ -11,7 +11,6 @@ from jax_fem.problem import Problem
 from jax_fem.solver import solver
 from jax_fem.utils import modify_vtu_file, save_sol
 
-
 class LinearElasticity(Problem):
     def get_tensor_map(self):
         def stress(u_grad):
